@@ -268,11 +268,13 @@ h6{font-size: 15px;}
     justify-content: space-evenly;
     background-color: var(--previewShadow);
 }
+
 .social-links{
     display: grid;
     align-content: center;
     text-align: center;
 }
+
 #social_img{
     display: block;
     margin: 0 auto;
@@ -282,6 +284,18 @@ h6{font-size: 15px;}
     object-fit: contain;
 }
 
+.post-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,320px);
+    gap:20px;
+    justify-content: center;
+}
+
+.thumbnail{
+    display:block;
+    width: 100%;
+    height: 180px;
+}
 @media screen and (max-width:1200px) {
     .container{
         width:95%;
