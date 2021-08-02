@@ -1,11 +1,11 @@
 :root{
     --mainColor: #d5d8db;
-    --secondaryColor: white;
+    --secondaryColor: rgba(255, 255, 255, 0.856);
 
     --borderColor: #606670;
 
     --mainText: black;
-    --secondaryText: #949fa5;
+    --secondaryText: #596166;
 
     --themeDotBorder: #24292e;
 
@@ -55,7 +55,7 @@ h6{font-size: 15px;}
 }
 
 .s2{
-    background-color: var(--secondaryText);
+    background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
@@ -254,6 +254,18 @@ h6{font-size: 15px;}
 #corner-br{
     bottom: -5px;
     right:-5px;
+}
+
+.about-wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    padding: 50px 0 50px 0;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
 }
 
 @media screen and (max-width:1200px) {
