@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afocoder Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="" id="theme-style">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,10 +46,10 @@
                 <h5 style="text-align: center; line-height:0" >Personalize Theme</h5>
 
                 <div id="theme-options-wrapper">
-                    <div class="theme-dot" id="light-mode"></div>
-                    <div class="theme-dot" id="blue-mode"></div>
-                    <div class="theme-dot" id="green-mode"></div>
-                    <div class="theme-dot" id="dark-mode"></div>     
+                    <div data-mode ="light" class="theme-dot" id="light-mode"></div>
+                    <div data-mode ="blue"  class="theme-dot" id="blue-mode"></div>
+                    <div data-mode ="green" class="theme-dot" id="green-mode"></div>
+                    <div data-mode ="dark" class="theme-dot" id="dark-mode"></div>     
                 </div>
 
                 <p id="settings-note"> Theme will be saved for<br> your next visit</p>
@@ -210,6 +211,8 @@
 </section>
 
 </body>
+
+<script src="script.js" type="text/javascript"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/8.8.1/firebase-app.js"></script>
 
