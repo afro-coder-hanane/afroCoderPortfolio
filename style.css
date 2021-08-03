@@ -11,6 +11,8 @@
 
     --previewBg: #fffefa;
     --previewShadow:#ede4ce;
+
+    --buttonColor: black;
 }
 
 
@@ -295,7 +297,61 @@ h6{font-size: 15px;}
     display:block;
     width: 100%;
     height: 180px;
+    object-fit: cover;
 }
+.post-preview{
+    background-color: #fff;
+    padding:15px;
+}
+
+.post-title{
+    color: black;
+    margin:0;
+}
+
+.post-intro{
+ color:#24292e;
+ font-size: 13px;
+}
+
+#contact-form{
+    display:block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin-bottom: 50px;
+}
+
+#contact-form label{
+    line-height: 2.5em;
+}
+
+#contact-form textarea{
+    min-height: 100px ;
+}
+
+.input-field{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    border-radius: 5px;
+    font-size: 15px;
+
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+}
+
+#submit-btn{
+    margin-top: 10px;
+    width:100%;
+    padding: 10px 0 10px 0;
+    color: #fff;
+    background-color: var(--buttonColor);
+    border: none;
+}
+
 @media screen and (max-width:1200px) {
     .container{
         width:95%;
